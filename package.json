@@ -1,0 +1,26 @@
+{
+  "name": "decision-tree-schema",
+  "description": "JSON Schema for decision trees",
+  "version": "0.0.0",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "devDependencies": {
+    "boolean-json-schema": "^3.0.0",
+    "defence-cli": "~1.0.1",
+    "lispy-json": "^1.1.2",
+    "replace-require-self": "~1.0.0",
+    "tv4": "~1.1.12"
+  },
+  "files": [
+    "README.md",
+    "index.json"
+  ],
+  "keywords": [
+    "logic",
+    "schema"
+  ],
+  "license": "MIT",
+  "repository": "kemitchell/decision-tree-schema.json",
+  "scripts": {
+    "test": "defence README.md | replace-require-self | node"
+  }
+}
