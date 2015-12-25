@@ -1,7 +1,7 @@
 {
   "name": "decision-tree-schema",
   "description": "JSON Schema for decision trees",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "dependencies": {
     "boolean-json-schema": "^3.0.0"
