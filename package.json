@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "devDependencies": {
-    "boolean-json-schema": "^3.0.0",
     "defence-cli": "~1.0.1",
+    "json-schema-ref-parser": "^1.4.0",
     "lispy-json": "^1.1.2",
     "replace-require-self": "~1.0.0",
     "tv4": "~1.1.12"
@@ -21,6 +21,11 @@
   "license": "MIT",
   "repository": "kemitchell/decision-tree-schema.json",
   "scripts": {
+    "prepublish": "node build.js > index.json",
+    "pretest": "npm run prepublish",
     "test": "defence README.md | replace-require-self | node"
+  },
+  "dependencies": {
+    "boolean-json-schema": "^3.0.0"
   }
 }

@@ -8,6 +8,8 @@
     "branch": {
       "type": "object",
       "properties": {
+        "condition": {
+          "$ref": "./node_modules/boolean-json-schema/index.json" },
         "true": {
           "$ref": "#/definitions/decisionTree" },
         "false": {
