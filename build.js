@@ -5,4 +5,4 @@ require('json-schema-ref-parser').bundle(
       console.error(error)
       process.exit(1) }
     else {
-      console.log('%j', schema) } })
+      console.log(require('lispy-json')(schema)) } })
