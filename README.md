@@ -13,13 +13,19 @@ A decision tree is made of branches, each of which has a condition and paths for
 ```javascript
 var assert = require('assert')
 
-assert.deepEqual(
-  tv4.validateMultiple(
+assert(
+  tv4.validate(
     { condition: 'English',
       true:  { result: 'Hello!' },
       false: { result: 'Allo!' } },
-    schema).errors,
-  [ ])
+    schema))
+
+assert(
+  !tv4.validate(
+    { condition: undefined,
+      true:  { result: 'Hello!' },
+      false: { result: 'Allo!' } },
+    schema))
 
 assert.deepEqual(tv4.missing, [ ])
 ```
