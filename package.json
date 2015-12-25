@@ -3,6 +3,9 @@
   "description": "JSON Schema for decision trees",
   "version": "0.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "dependencies": {
+    "boolean-json-schema": "^3.0.0"
+  },
   "devDependencies": {
     "defence-cli": "~1.0.1",
     "json-schema-ref-parser": "^1.4.0",
@@ -25,8 +28,5 @@
     "prepublish": "node build.js > index.json",
     "pretest": "npm run prepublish",
     "test": "defence README.md | replace-require-self | node"
-  },
-  "dependencies": {
-    "boolean-json-schema": "^3.0.0"
   }
 }
