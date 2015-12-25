@@ -8,7 +8,7 @@ The package exports a [JSON Schema](http://json-schema.org). You will need a com
 var tv4 = require('tv4')
 ```
 
-A decision tree is made of branches, each of which has a condition and paths for when that condition is true or false:
+A decision tree is made of branches and results. A branch is a boolean condition with alternate paths for when the condition is true and false. A result is any valid JavaScript value, wrapped in an object with a `result` property.
 
 ```javascript
 var assert = require('assert')
